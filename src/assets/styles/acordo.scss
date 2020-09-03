@@ -1,0 +1,24 @@
+/* body .p-dropdown-panel .p-dropdown-filter-container .p-dropdown-filter {
+    width: 473px;
+} */
+
+.customer-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+
+    &.status-pendente {
+        background-color: #FFCDD2;
+        color: #C63737;
+    }
+
+    &.status-vigente {
+        background-color: #FEEDAF;
+        color: #5bc41f;
+    }
+
+
+}

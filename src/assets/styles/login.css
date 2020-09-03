@@ -1,0 +1,64 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6C7A89;
+}
+
+.login-container .content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 400px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.login-container .title {
+    margin-left: 0;
+    margin-top: 10%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.login-container .form {
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+.login-container .form input {
+    height: 42px;
+    width: 100%;
+}
+
+.login-container .label-input {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.login-container .btn {
+    margin-top: 7%;
+    text-align: center;
+    height: 45px;
+}
+
+.login-container .logo {
+    margin-top: 10%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.login-container .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 3%;
+    width: 100%;
+    color: black;
+    text-align: center;
+    vertical-align: top;
+    font-size: 8pt;
+}

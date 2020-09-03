@@ -1,0 +1,160 @@
+ @font-face {
+  font-family: "Roboto Condensed Light";
+  src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "Varta Light";
+  src: url("../fonts/Varta-Light.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body, #app {
+  min-height: 100% !important;
+  width: 100%;
+  background-color: #6C7A89;
+  font-family: 'Varta Light' !important;
+}
+hr{
+  border-top: 1px solid black;
+}
+.p-component {
+  font-family: 'Varta Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+ul {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+
+}
+.p-grid {
+  margin-right: 0rem; 
+     margin-left: 0rem;
+}
+/*
+.p-menubar .p-menubar-root-list .p-menuitem-text {
+  /* font-family: 'Open Sans SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-size: 14px;
+}
+.p-menubar .p-menubar-root-list .p-menuitem-icon {
+  font-size: 14px;
+}
+.p-card {
+  box-shadow: none;
+}
+.p-card .p-card-title {
+  font-size: 18px;
+  font-family: 'Open Sans Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+/* .p-button {
+  margin: 20px 20px 0 0;
+} 
+.p-card ul li {
+  list-style: outside;
+  margin-left: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.p-menubar {
+  background-color: white;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+}
+.p-carousel .p-carousel-items-content {
+  /* border: 1px solid blue; 
+  width: 100%;
+}
+.p-carousel .p-disabled, .p-carousel .p-disabled * {
+  display: none;
+}
+.p-datepicker table td{
+  padding: 0 !important;
+} 
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6C7A89;
+}
+
+.login-container .content {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 400px;
+  height: 65%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.login-container .title {
+  margin-left: 0;
+  margin-top: 20%;
+  font-size: 14px;
+  text-align: left;
+}
+
+.login-container .form {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.login-container .form input {
+  height: 42px;
+  width: 100%;
+}
+
+.login-container .label-input {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+.login-container .btn {
+  margin-top: 7%;
+  text-align: center;
+  height: 45px;
+}
+
+.login-container .logo {
+  margin-top: 10%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.login-container .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 3%;
+  width: 100%;
+  color: black;
+  text-align: center;
+  vertical-align: top;
+  font-size: 8pt;
+}
+/* h1 {
+  color: black;
+  font-family: 'Open Sans Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+h2 {
+  color: #495057;
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+h3 {
+  color: #495057;
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+} */
