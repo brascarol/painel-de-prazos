@@ -80,6 +80,7 @@ Vue.component('FileUpload', FileUpload)
 Vue.config.productionTip = false
 
 new Vue({
+    Vue,
     router,
     store,
     render: h => h(App),

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { segurancaAxios } from './services/http-common'
+import { http } from './services/http-common'
 import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex)
@@ -22,14 +22,13 @@ const mutations = {
 const actions = {
     efetuarLogin({ commit }, usuario) {
         return new Promise((resolve, reject) => {
-            segurancaAxios.post('/oauth/token', usuario, {
+            http.post('/autenticacao', usuario, {
                 headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    'Authorization': "Basic c2VndXJhbmNhOnRjZSFAMTIz"
+                    'Content-Type': 'application/json'
                   }
             }).then(response => {
                 commit('DEFINIR_USUARIO_LOGADO', {
-                    token: response.data.access_token
+                    token: response.data.token
                 })
                 resolve(response.data)
             }).catch(erro => {
