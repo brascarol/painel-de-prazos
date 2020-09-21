@@ -55,10 +55,9 @@ Vue.component('Breadcrumb', Breadcrumb);
 Vue.component('AutoComplete', AutoComplete);
 Vue.component('InputText', InputText);
 Vue.component('InputNumber', InputNumber);
-Vue.component('MultiSelect', MultiSelect)
-Vue.component('Calendar', Calendar)
-Vue.component('Dropdown', Dropdown)
-Vue.component('Button', Button)
+Vue.component('Calendar', Calendar);
+Vue.component('Dropdown', Dropdown);
+Vue.component('Button', Button);
 Vue.component('DataTable', DataTable);
 Vue.component('Chart', Chart);
 Vue.component('Card', Card);
@@ -76,6 +75,7 @@ Vue.component('ProgressBar', ProgressBar)
 Vue.component('Inplace', Inplace)
 Vue.component('Carousel', Carousel)
 Vue.component('FileUpload', FileUpload)
+Vue.component('MultiSelect', MultiSelect);
 
 Vue.config.productionTip = false
 

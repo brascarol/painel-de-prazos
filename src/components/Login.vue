@@ -49,7 +49,7 @@ export default {
           this.$router.push({
             name: "principal",
             params: {
-              usuarioId: this.username,
+              usuario: this.usuario
             },
           });
         })

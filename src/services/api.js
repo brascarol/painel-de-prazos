@@ -6,16 +6,37 @@ class ApiService {
         return http.get("/entes");
     }
 
-    getCoordenadores() {
+    getUsuarios() {
         return http.get("/coordenadores");
-        
     }
 
-    getPeriodos() {
-        return http.get("/periodos");
-        
+    getUsuariosByGrupoUsuarioId(grupoUsuarioId) {
+        return http.get("/usuario/" + grupoUsuarioId);
     }
 
+    getPeriodos(id) {
+        return http.get("/periodos/frequencia/" + id);
+    }
+
+    getRemessas(filtro) {
+        return http.get("/remessas/filtro"+ filtro);
+    }
+
+    getFrequencia() {
+        return http.get("/frequencias");
+    }
+
+    postRemessa(remessa) {
+        return http.post("/remessas", remessa);
+    }
+
+    postObrigacao(obrigacao) {
+        return http.post("/obrigacoes", obrigacao);
+    }
+
+    postEnte(ente) {
+        return http.post("/entes", ente);
+    }
 }
 
 export default new ApiService();

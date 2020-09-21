@@ -6,7 +6,7 @@
           <div class="p-field p-col-4">
             <label style="width:100%">
               Coordenador
-              <Dropdown style="width:100%" :filter="true" :showClear="true" />
+              <Dropdown :placeholder="label" :disabled="!isAdmin" style="width:100%" :filter="true" :showClear="true" />
             </label>
           </div>
           <div class="p-field p-col-4">
@@ -76,7 +76,11 @@ export default {
       entes: [],
       ente: null,
       periodos: [],
+      coordenadores: [],
       periodo: null,
+      label: null,
+      isAdmin: true,
+      usuario: this.$route.params.usuario,
       chartData: {
         labels: ["A", "B", "C"],
         datasets: [
@@ -90,6 +94,14 @@ export default {
     };
   },
   mounted() {
+    ApiService.getUsuarioGrupo(this.usuario.usuarioId).then((res) => (this.tipo = res.data));
+    if(this.tipo == 2) {
+      this.label = this.usuario.pessoa.nome;
+      this.isAdmin = false;
+    } else {
+      ApiService.getUsuarioGrupo(2).then((res) => (this.coordenadores = res.data));
+
+    }
     ApiService.getEntes().then((res) => (this.entes = res.data));
     ApiService.getPeriodos().then((res) => (this.periodos = res.data));
   },

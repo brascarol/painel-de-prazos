@@ -22,8 +22,8 @@
 export default {
   data() {
     return {
-      usuario: localStorage.getItem("user"),
-      usuarioId: this.$route.params.usuarioId,
+      usuario: this.$route.params.usuario,
+      tipo: null,
       items: [
         { label: "Produtividade", icon: "pi pi-fw pi-home", to: "/template" },
         {
@@ -44,7 +44,6 @@ export default {
       localStorage.removeItem("token");
        this.$store.state.token = null
        this.$router.push("/")
-
 
     }
   }
